@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "font-1";
+  src: url(./fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "font-3";
+  src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: "font-4";
+  src: url(./fonts/Overwave-DOpAW.ttf);
+}
+
+:root {
+  --color1: #071e22;
+  --color2: #1d7874;
+  --color3: #679289;
+  --color4: #f4c095;
+  --color5: #ffffff;
+}
+
+* {
+  font-family: "font-2";
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: var(--color5);
+}
+
+*::selection {
+  background-color: var(--color3);
+}
+
+/* Header - Home */
+header {
+  height: 90vh;
+  width: 100%;
+  background-color: var(--color1);
+  padding-top: 10vh;
+  padding-left: 3%;
+}
+
+/* Nav */
+nav {
+  height: 60vh;
+  width: 100px;
+  background-color: var(--color3);
+  border-radius: 15px;
+  z-index: 1000;
+  position: absolute;
+  top: 20vh;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+  width: 100px;
+}
+
+nav ul li img {
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  opacity: 0.75;
+}
+nav ul li img:hover {
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.5));
+}
+nav ul li img:active {
+  filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 1));
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+/* Main Header */
+h1 {
+  color: var(--color4);
+  font-family: "font-3";
+  font-size: 64px;
+  align-items: center;
+  position: absolute;
+  top: 20vh;
+  left: 25%;
+}
+
+h2 {
+  font-family: "font-4";
+  font-size: 48px;
+  letter-spacing: 10px;
+  align-items: center;
+  background: linear-gradient(90deg, #207c78 0%, #f4c095 75%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 30vh;
+  left: 25%;
+}
+
+#downloadcv {
+  font-family: "font-1";
+  font-size: 24px;
+  width: 275px;
+  height: 75px;
+  color: var(--color4);
+  background-color: var(--color2);
+  border-radius: 15px;
+  border: none;
+  position: absolute;
+  bottom: 40vh;
+  right: 25%;
+  cursor: pointer;
+  z-index: 2;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wave-home {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 90%;
+  height: 50%;
+}
