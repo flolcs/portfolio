@@ -40,18 +40,18 @@ header {
   width: 100%;
   background-color: var(--color1);
   padding-top: 10vh;
-  padding-left: 3%;
 }
 
 /* Nav */
 nav {
-  height: 60vh;
-  width: 100px;
+  height: 65vh;
+  width: 80px;
   background-color: var(--color3);
   border-radius: 15px;
   z-index: 1000;
-  position: absolute;
+  position: fixed;
   top: 20vh;
+  left: 3%;
 }
 
 nav ul {
@@ -59,13 +59,13 @@ nav ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 60vh;
-  width: 100px;
+  height: 65vh;
+  width: 80px;
 }
 
 nav ul li img {
-  width: 75px;
-  height: 75px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   opacity: 0.75;
 }
@@ -101,7 +101,7 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  top: 30vh;
+  top: 35vh;
   left: 25%;
 }
 
@@ -115,7 +115,7 @@ h2 {
   border-radius: 15px;
   border: none;
   position: absolute;
-  bottom: 40vh;
+  bottom: 35vh;
   right: 25%;
   cursor: pointer;
   z-index: 2;
@@ -140,3 +140,118 @@ h2 {
   width: 90%;
   height: 50%;
 }
+
+/* Responsive Header - Homepage */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  #downloadcv {
+    width: 200px;
+    height: 65px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 28px;
+    letter-spacing: 5px;
+  }
+  #downloadcv {
+    width: 160px;
+    height: 50px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+}
+
+/* About me */
+.aboutme {
+  height: 100vh;
+  background-color: var(--color2);
+}
+
+#wave-aboutme {
+  position: absolute;
+  right: 0;
+  top: 100vh;
+  height: 20vh;
+  width: 90%;
+}
+
+h3 {
+  font-family: "font-1";
+  color: var(--color4);
+  font-size: 42px;
+  position: absolute;
+  top: 115vh;
+  left: 60%;
+}
+
+#informatique {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: 170vh;
+  right: 3%;
+}
+
+.aboutme-description {
+  position: absolute;
+  left: 15%;
+  top: 125vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50vh;
+}
+
+p {
+  font-family: "font-1";
+  font-size: 32px;
+  line-height: 30px;
+  color: var(--color5);
+  margin-right: 5%;
+}
+
+p::before {
+  content: "";
+  display: block;
+  background: linear-gradient(90deg, #ffffff -15%, #f4c095 100%), #ffffff;
+  width: 60px;
+  height: 5px;
+  margin-bottom: 10px;
+}
+
+/* Responsive About me */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  p {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  h3 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 20px;
+    margin-left: 5%;
+  }
+  #informatique {
+    height: 100px;
+    width: 100px;
+    top: 175vh;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+}
+
+/* Skills */
