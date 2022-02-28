@@ -124,6 +124,14 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+#downloadcv:hover {
+  background-color: var(--color3);
+  transition: 0.5s;
+}
+#downloadcv:active {
+  background-color: var(--color3);
+  filter: drop-shadow(0px 5px 5px rgb(255, 255, 255, 0.5));
+}
 
 #wave-home {
   position: absolute;
