@@ -44,13 +44,13 @@ header {
 
 /* Nav */
 nav {
-  height: 65vh;
-  width: 80px;
+  height: 50vh;
+  width: 100px;
   background-color: var(--color3);
   border-radius: 15px;
   z-index: 1000;
   position: fixed;
-  top: 20vh;
+  top: 25vh;
   left: 3%;
 }
 
@@ -59,13 +59,13 @@ nav ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 65vh;
-  width: 80px;
+  height: 50vh;
+  width: 100px;
 }
 
 nav ul li img {
-  width: 60px;
-  height: 60px;
+  width: 75px;
+  height: 75px;
   cursor: pointer;
   opacity: 0.5;
 }
@@ -168,6 +168,21 @@ h2 {
     height: 50px;
     font-size: 14px;
   }
+  nav {
+    height: 50vh;
+    width: 80px;
+    top: 25vh;
+  }
+
+  nav ul {
+    height: 50vh;
+    width: 80px;
+  }
+
+  nav ul li img {
+    width: 60px;
+    height: 60px;
+  }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   h1 {
@@ -184,12 +199,13 @@ h2 {
     left: 50%;
   }
   nav {
-    height: 60vh;
+    height: 40vh;
     width: 60px;
+    top: 30vh;
   }
 
   nav ul {
-    height: 60vh;
+    height: 40vh;
     width: 60px;
   }
 
@@ -214,12 +230,13 @@ h2 {
     left: 50%;
   }
   nav {
-    height: 60vh;
+    height: 40vh;
     width: 60px;
+    top: 30vh;
   }
 
   nav ul {
-    height: 60vh;
+    height: 40vh;
     width: 60px;
   }
 
@@ -244,18 +261,19 @@ h2 {
     left: 50%;
   }
   nav {
-    height: 60vh;
-    width: 50px;
+    height: 40vh;
+    width: 60px;
+    top: 30vh;
   }
 
   nav ul {
-    height: 60vh;
-    width: 50px;
+    height: 40vh;
+    width: 60px;
   }
 
   nav ul li img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
   }
 }
 
@@ -286,8 +304,8 @@ h3 {
   height: 150px;
   width: 150px;
   position: absolute;
-  top: 170vh;
-  right: 3%;
+  top: 180vh;
+  right: 5%;
 }
 
 .aboutme-description {
@@ -332,15 +350,17 @@ p::before {
     font-size: 20px;
     margin-left: 5%;
   }
-  #informatique {
-    height: 100px;
-    width: 100px;
-    top: 175vh;
-  }
   p::before {
     width: 60px;
     height: 4px;
     margin-bottom: 8px;
+  }
+  #informatique {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 180vh;
+    right: 35%;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
@@ -351,15 +371,17 @@ p::before {
     font-size: 16px;
     margin-left: 8%;
   }
-  #informatique {
-    height: 100px;
-    width: 100px;
-    top: 175vh;
-  }
   p::before {
     width: 50px;
     height: 4px;
     margin-bottom: 6px;
+  }
+  #informatique {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 180vh;
+    right: 35%;
   }
 }
 
@@ -372,15 +394,18 @@ p::before {
     font-size: 16px;
     margin-left: 8%;
   }
-  #informatique {
-    height: 100px;
-    width: 100px;
-    top: 175vh;
-  }
+
   p::before {
     width: 40px;
     height: 4px;
     margin-bottom: 4px;
+  }
+  #informatique {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 180vh;
+    right: 35%;
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
@@ -393,9 +418,11 @@ p::before {
     margin-left: 8%;
   }
   #informatique {
-    height: 100px;
-    width: 100px;
-    top: 175vh;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 180vh;
+    right: 25%;
   }
   p::before {
     width: 35px;
