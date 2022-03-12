@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Florian Lucas</title>
-    <link rel="shortcut icon" href="./assets/wave.png" />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><img src="./assets/home.png" alt="home" /><a href=""></a></li>
-          <li>
-            <img src="./assets/aboutme.png" alt="about me" /><a href=""></a>
-          </li>
-          <li><img src="./assets/skills.png" alt="skills" /><a href=""></a></li>
-          <li>
-            <img src="./assets/portfolio.png" alt="portfolio" /><a href=""></a>
-          </li>
-          <li>
-            <img src="./assets/contact.png" alt="contact" /><a href=""></a>
-          </li>
-        </ul>
-      </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Florian Lucas</title>
+  <link rel="shortcut icon" href="./assets/wave.png" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li id="btnhome">
+          <img src="./assets/home.png" alt="home" />
+          <a href=".homepage"></a>
+        </li>
+        <li id="btnaboutme">
+          <img src="./assets/aboutme.png" alt="about me" />
+          <a href=".aboutme"></a>
+        </li>
+        <li id="btnskills">
+          <img src="./assets/skills.png" alt="skills" />
+          <a href=".skills"></a>
+        </li>
+        <li id="btnportfolio">
+          <img src="./assets/portfolio.png" alt="portfolio" />
+          <a href=".portfolio"></a>
+        </li>
+        <li id="btncontact">
+          <img src="./assets/contact.png" alt="contact" />
+          <a href=".contact"></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="homepage">
       <h1>Florian LUCAS</h1>
       <h2>Développeur web front-end</h2>
-      <a id="downloadcv" href="./downloads/cvlucasflorian.pdf" download="cvlucasflorian"
-        >Télécharger mon CV</a
-      >
+      <a id="downloadcv" href="./downloads/cvlucasflorian.pdf" download="cvlucasflorian">Télécharger mon CV</a>
       <img id="wave-home" src="./assets/wave.png" alt="wave" />
-    </header>
-    <main>
-      <section class="aboutme">
-        <img id="wave-aboutme" src="./assets/wave-aboutme.png" alt="wave" />
-        <h3>A propos</h3>
-        <div class="aboutme-description">
-          <p>Passionée d'informatique</p>
-          <p>
-            Référent numérique et administrateur réseau dans un établissement
-            public
-          </p>
-          <p>Développeur et intégrateur web front-end</p>
-        </div>
-        <img
-          id="informatique"
-          src="./assets/informatique.png"
-          alt="informatique"
-        />
-      </section>
-      <section class="skills">
-      </section>
-    </main>
-    <script src="./index.js"></script>
-  </body>
+    </section>
+  </header>
+
+  <main>
+    <section class="aboutme">
+      <img id="wave-aboutme" src="./assets/wave-aboutme.png" alt="wave" />
+      <h3>A propos</h3>
+      <div class="aboutme-description">
+        <p>Passionée d'informatique</p>
+        <p>
+          Référent numérique et administrateur réseau dans un établissement
+          public
+        </p>
+        <p>Développeur et intégrateur web front-end</p>
+      </div>
+      <img id="informatique" src="./assets/informatique.png" alt="informatique" />
+    </section>
+    <section class="skills"></section>
+    <section class="portfolio"></section>
+    <section class="contact"></section>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
 </html>
