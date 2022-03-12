@@ -449,6 +449,80 @@ p::before {
 /* Skills */
 #skills {
   height: 100vh;
+  background-color: var(--color1);
+}
+
+#wave-skills {
+  position: absolute;
+  right: 0%;
+  height: 100vh;
+  width: 20%;
+}
+
+#titre-competences {
+  position: absolute;
+  top: 210vh;
+  left: 35%;
+}
+
+h4 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+#skill-container1 {
+  padding-top: 25vh;
+  padding-left: 15%;
+}
+
+#container1 {
+  width: 60%;
+  height: 8px;
+  background-color: #444444;
+  border-radius: 10px;
+  z-index: 2;
+}
+#sous-container1 {
+  width: 75%;
+  height: 8px;
+  background-color: var(--color4);
+  border-radius: 10px;
+}
+#skill-container2 {
+  padding-top: 3vh;
+  padding-left: 15%;
+}
+
+#container2 {
+  width: 60%;
+  height: 8px;
+  background-color: #444444;
+  border-radius: 10px;
+  z-index: 2;
+}
+#sous-container2 {
+  width: 60%;
+  height: 8px;
+  background-color: var(--color3);
+  border-radius: 10px;
+}
+#skill-container3 {
+  padding-top: 3vh;
+  padding-left: 15%;
+}
+
+#container3 {
+  width: 60%;
+  height: 8px;
+  background-color: #444444;
+  border-radius: 10px;
+  z-index: 2;
+}
+#sous-container3 {
+  width: 20%;
+  height: 8px;
+  background-color: var(--color2);
+  border-radius: 10px;
 }
 
 /* Portfolio */
