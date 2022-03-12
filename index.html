@@ -14,29 +14,14 @@
   <header>
     <nav>
       <ul>
-        <li id="btnhome">
-          <img src="./assets/home.png" alt="home" />
-          <a href=".homepage"></a>
-        </li>
-        <li id="btnaboutme">
-          <img src="./assets/aboutme.png" alt="about me" />
-          <a href=".aboutme"></a>
-        </li>
-        <li id="btnskills">
-          <img src="./assets/skills.png" alt="skills" />
-          <a href=".skills"></a>
-        </li>
-        <li id="btnportfolio">
-          <img src="./assets/portfolio.png" alt="portfolio" />
-          <a href=".portfolio"></a>
-        </li>
-        <li id="btncontact">
-          <img src="./assets/contact.png" alt="contact" />
-          <a href=".contact"></a>
-        </li>
+        <li class="homepage active"><a href="#homepage"><img src="./assets/home.png" alt="home"></a></li>
+        <li class="aboutme"><a href="#aboutme"><img src="./assets/aboutme.png" alt="about me"></a></li>
+        <li class="skills"><a href="#skills"><img src="./assets/skills.png" alt="skills"></a></li>
+        <li class="portfolio"><a href="#portfolio"><img src="./assets/portfolio.png" alt="portfolio"></a></li>
+        <li class="contact"><a href="#contact"><img src="./assets/contact.png" alt="contact"></a></li>
       </ul>
     </nav>
-    <section class="homepage">
+    <section id="homepage">
       <h1>Florian LUCAS</h1>
       <h2>Développeur web front-end</h2>
       <a id="downloadcv" href="./downloads/cvlucasflorian.pdf" download="cvlucasflorian">Télécharger mon CV</a>
@@ -45,7 +30,7 @@
   </header>
 
   <main>
-    <section class="aboutme">
+    <section id="aboutme">
       <img id="wave-aboutme" src="./assets/wave-aboutme.png" alt="wave" />
       <h3>A propos</h3>
       <div class="aboutme-description">
@@ -58,11 +43,10 @@
       </div>
       <img id="informatique" src="./assets/informatique.png" alt="informatique" />
     </section>
-    <section class="skills"></section>
-    <section class="portfolio"></section>
-    <section class="contact"></section>
+    <section id="skills"></section>
+    <section id="portfolio"></section>
+    <section id="contact"></section>
   </main>
   <script src="./index.js"></script>
 </body>
-
 </html>

@@ -1,4 +1,20 @@
+//Navbar
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("header nav ul li");
+let current = "";
 
-console.log(sections);
+//Navbar
+window.onscroll = () => {
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (scrollY >= sectionTop - 60) {
+      current = section.getAttribute("id");
+    }
+  });
+  navLi.forEach((li) => {
+    li.classList.remove("active");
+    if (li.className === current) {
+      li.classList.add("active");
+    }
+  });
+};
