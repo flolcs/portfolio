@@ -54,6 +54,41 @@ header {
   background-color: var(--color1);
 }
 
+/* Music */
+
+#music-note {
+  height: 50px;
+  width: 50px;
+  z-index: 1000;
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 5vh;
+}
+
+#music-note:hover {
+  filter: brightness(120%);
+}
+
+input[id="music-note"]:active {
+  animation: animmusic 0.1s;
+}
+
+@keyframes animmusic {
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Nav */
 nav {
   height: 500px;
@@ -482,6 +517,7 @@ h4 {
   padding-bottom: 10px;
 }
 
+/* HTML */
 #skill-container1 {
   padding-top: 25vh;
   padding-left: 15%;
@@ -500,6 +536,8 @@ h4 {
   background-color: var(--color4);
   border-radius: 10px;
 }
+
+/* CSS */
 #skill-container2 {
   padding-top: 3vh;
   padding-left: 15%;
@@ -518,6 +556,8 @@ h4 {
   background-color: var(--color3);
   border-radius: 10px;
 }
+
+/* Js */
 #skill-container3 {
   padding-top: 3vh;
   padding-left: 15%;

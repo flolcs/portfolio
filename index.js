@@ -6,6 +6,18 @@ window.addEventListener("mousemove", (e) => {
   mousemove.style.top = e.pageY + "px";
 });
 
+// Music
+const music = document.querySelector("#music-note");
+const mySong = document.querySelector("#mySong");
+
+music.addEventListener("click", () => {
+  if (mySong.paused) {
+    mySong.play();
+  } else {
+    mySong.pause();
+  }
+});
+
 //Navbar
 const sections = document.querySelectorAll("section");
 const navLi = document.querySelectorAll("header nav ul li");
