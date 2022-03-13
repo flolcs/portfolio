@@ -531,10 +531,15 @@ h4 {
   z-index: 2;
 }
 #sous-container1 {
-  width: 75%;
+  width: 0%;
   height: 8px;
   background-color: var(--color4);
   border-radius: 10px;
+}
+
+#sous-container1.active {
+  width: 75%;
+  transition: 2s;
 }
 
 /* CSS */
@@ -551,10 +556,15 @@ h4 {
   z-index: 2;
 }
 #sous-container2 {
-  width: 60%;
+  width: 0%;
   height: 8px;
   background-color: var(--color3);
   border-radius: 10px;
+}
+
+#sous-container2.active {
+  width: 60%;
+  transition: 2s;
 }
 
 /* Js */
@@ -571,10 +581,15 @@ h4 {
   z-index: 2;
 }
 #sous-container3 {
-  width: 20%;
+  width: 0%;
   height: 8px;
   background-color: var(--color2);
   border-radius: 10px;
+}
+
+#sous-container3.active {
+  width: 20%;
+  transition: 2s;
 }
 
 /* Portfolio */
