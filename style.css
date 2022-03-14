@@ -592,6 +592,67 @@ h4 {
   transition: 2s;
 }
 
+/* Outils */
+
+h5 {
+  font-size: 22px;
+  font-family: "font-1";
+  padding-left: 15%;
+  padding-top: 3%;
+  color: var(--color3);
+}
+#grid-container-skills {
+  height: 30vh;
+  width: 40%;
+  padding-left: 15%;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(2, 100px);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+  align-items: flex-start;
+}
+
+#sous-container1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+#sous-container2 {
+  grid-column: 1;
+  grid-row: 2;
+}
+#sous-container3 {
+  grid-column: 2;
+  grid-row: 1;
+}
+#sous-container4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#github-skills {
+  height: 50px;
+  width: 50px;
+}
+#bootstrap-skills {
+  height: 50px;
+  width: 50px;
+}
+#figma-skills {
+  height: 50px;
+  width: 50px;
+}
+#photoshop-skills {
+  height: 50px;
+  width: 50px;
+}
+
+h6 {
+  font-family: "font-1";
+  color: var(--color5);
+  font-size: 14px;
+}
+
 /* Portfolio */
 #portfolio {
   height: 100vh;
