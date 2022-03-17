@@ -91,7 +91,7 @@ input[id="music-note"]:active {
 
 /* Nav */
 nav {
-  height: 500px;
+  height: 450px;
   width: 100px;
   background-color: var(--color3);
   border-radius: 15px;
@@ -107,13 +107,13 @@ nav ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 500px;
+  height: 450px;
   width: 100px;
 }
 
 nav ul li img {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
   opacity: 0.5;
 }
@@ -603,14 +603,13 @@ h5 {
 }
 #grid-container-skills {
   height: 30vh;
-  width: 40%;
-  padding-left: 15%;
+  width: 30%;
+  margin-left: 15%;
   display: grid;
-  grid-template-columns: repeat(2, 100px);
-  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(2, 80px);
+  grid-template-rows: repeat(2, 80px);
   grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  align-items: flex-start;
+  grid-row-gap: 20px;
 }
 
 #sous-container1 {

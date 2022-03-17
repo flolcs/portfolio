@@ -73,7 +73,7 @@ window.addEventListener("scroll", () => {
   const { scrollTop, clientHeight } = document.documentElement;
   const topToTop = slideJs.getBoundingClientRect().top;
 
-  if (scrollTop > (scrollTop + topToTop).toFixed() - clientHeight * 0.5) {
+  if (scrollTop > (scrollTop + topToTop).toFixed() - clientHeight * 0.6) {
     slideJs.classList.add("active");
   }
 });
