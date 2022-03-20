@@ -1,107 +1,139 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florian Lucas</title>
+    <link rel="shortcut icon" href="./assets/wave.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Florian Lucas</title>
-  <link rel="shortcut icon" href="./assets/wave.png" />
-  <link rel="stylesheet" href="./style.css" />
-</head>
-
-<body>
-  <div class="mousemove"></div>
-  <header>
-    <div>
-      <input type="image" src="./assets/music-note.png" id="music-note">
-      <audio id="mySong" src="./assets/music.mp3"></audio>
-    </div>
-    <nav>
-      <ul>
-        <li class="homepage active"><a href="#homepage"><img src="./assets/home.png" alt="home"></a></li>
-        <li class="aboutme"><a href="#aboutme"><img src="./assets/aboutme.png" alt="about me"></a></li>
-        <li class="skills"><a href="#skills"><img src="./assets/skills.png" alt="skills"></a></li>
-        <li class="portfolio"><a href="#portfolio"><img src="./assets/portfolio.png" alt="portfolio"></a></li>
-        <li class="contact"><a href="#contact"><img src="./assets/contact.png" alt="contact"></a></li>
-      </ul>
-    </nav>
-    <section id="homepage">
-      <h1>Florian LUCAS</h1>
-      <h2>Développeur web front-end</h2>
-      <a id="downloadcv" href="./downloads/cvlucasflorian.pdf" download="cvlucasflorian">Télécharger mon CV</a>
-      <img id="wave-home" src="./assets/wave.png" alt="wave" />
-    </section>
-  </header>
-
-  <main>
-    <section id="aboutme">
-      <img id="wave-aboutme" src="./assets/wave-aboutme.png" alt="wave" />
-      <h3>A propos</h3>
-      <div class="aboutme-description">
-        <p id="text-aboutme">Passionée d'informatique</p>
-        <p id="text-aboutme">  
-          Référent numérique et administrateur réseau dans un établissement
-          public
-        </p>
-        <p id="text-aboutme">Développeur et intégrateur web front-end</p>
+  <body>
+    <div class="mousemove"></div>
+    <header>
+      <div>
+        <input type="image" src="./assets/music-note.png" id="music-note" />
+        <audio id="mySong" src="./assets/music.mp3"></audio>
       </div>
-    </section>
-    <section id="skills">
-      <h3 id="titre-competences">Compétences</h3>
-      <img id="wave-skills" src="./assets/wave-skills.png" alt="wave">
-      <div id="skill-container1">
-        <div id="skills-html">
-          <h4>HTML</h4>
-          <div id="container1">
-            <div id="sous-container1"></div>
+      <nav>
+        <ul>
+          <li class="homepage active">
+            <a href="#homepage"><img src="./assets/home.png" alt="home" /></a>
+          </li>
+          <li class="aboutme">
+            <a href="#aboutme"
+              ><img src="./assets/aboutme.png" alt="about me"
+            /></a>
+          </li>
+          <li class="skills">
+            <a href="#skills"><img src="./assets/skills.png" alt="skills" /></a>
+          </li>
+          <li class="portfolio">
+            <a href="#portfolio"
+              ><img src="./assets/portfolio.png" alt="portfolio"
+            /></a>
+          </li>
+          <li class="contact">
+            <a href="#contact"
+              ><img src="./assets/contact.png" alt="contact"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <section id="homepage">
+        <h1>Florian LUCAS</h1>
+        <h2>Développeur web front-end</h2>
+        <a
+          id="downloadcv"
+          href="./downloads/cvlucasflorian.pdf"
+          download="cvlucasflorian"
+          >Télécharger mon CV</a
+        >
+        <img id="wave-home" src="./assets/wave.png" alt="wave" />
+      </section>
+    </header>
+
+    <main>
+      <section id="aboutme">
+        <img id="wave-aboutme" src="./assets/wave-aboutme.png" alt="wave" />
+        <h3>A propos</h3>
+        <div class="aboutme-description">
+          <p id="text-aboutme">Passionée d'informatique</p>
+          <p id="text-aboutme">
+            Référent numérique et administrateur réseau dans un établissement
+            public
+          </p>
+          <p id="text-aboutme">Développeur et intégrateur web front-end</p>
+        </div>
+      </section>
+      <section id="skills">
+        <h3 id="titre-competences">Compétences</h3>
+        <img id="wave-skills" src="./assets/wave-skills.png" alt="wave" />
+        <div id="skills-description">
+          <div id="skill-container1">
+            <div id="skills-html">
+              <h4>HTML</h4>
+              <div id="container1">
+                <div id="sous-container1"></div>
+              </div>
+            </div>
+          </div>
+          <div id="skill-container2">
+            <div id="skills-css">
+              <h4>CSS</h4>
+              <div id="container2">
+                <div id="sous-container2"></div>
+              </div>
+            </div>
+          </div>
+          <div id="skill-container3">
+            <div id="skills-js">
+              <h4>Javascript</h4>
+              <div id="container3">
+                <div id="sous-container3"></div>
+              </div>
+            </div>
+          </div>
+          <div id="skills-flex">
+            <div id="grid-container-skills">
+              <span id="outils">Outils</span>
+              <img
+                id="github-skills"
+                src="./assets/github-skills.png"
+                alt="github"
+              />
+              <span id="span-github">Github</span>
+              <img
+                id="bootstrap-skills"
+                src="./assets/bootstrap.png"
+                alt="bootstrap"
+              />
+              <span id="span-bootstrap">Bootstrap</span>
+              <img id="figma-skills" src="./assets/figma.png" alt="figma" />
+              <span id="span-figma">Figma</span>
+              <img
+                id="photoshop-skills"
+                src="./assets/photoshop.png"
+                alt="photoshop"
+              />
+              <span id="span-photoshop">Photoshop</span>
+            </div>
+            <div id="flex-softskills">
+              <span id="soft-skills">Soft-skills</span>
+              <p id="text-softskills">Organisé</p>
+              <p id="text-softskills">Rigoureux</p>
+              <p id="text-softskills">Adaptable</p>
+              <p id="text-softskills">Autonome</p>
+              <p id="text-softskills">Travail en équipe</p>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="skill-container2">
-        <div id="skills-css">
-          <h4>CSS</h4>
-          <div id="container2">
-            <div id="sous-container2"></div>
-          </div>
-        </div>
-      </div>
-      <div id="skill-container3">
-        <div id="skills-js">
-          <h4>Javascript</h4>
-          <div id="container3">
-            <div id="sous-container3"></div>
-          </div>
-        </div>
-      </div>
-      <div id="skills-flex">
-        <div id="grid-container-skills">
-          <span id="outils">Outils</span>
-          <img  id="github-skills" src="./assets/github-skills.png" alt="github">
-          <span id="span-github">Github</span>
-          <img id="bootstrap-skills" src="./assets/bootstrap.png" alt="bootstrap">
-          <span id="span-bootstrap">Bootstrap</span>
-          <img id="figma-skills" src="./assets/figma.png" alt="figma">
-          <span id="span-figma">Figma</span>
-          <img id="photoshop-skills" src="./assets/photoshop.png" alt="photoshop">
-          <span id="span-photoshop">Photoshop</span>
-        </div>
-        <div id="flex-softskills">
-          <span id="soft-skills">Soft-skills</span>
-          <p id="text-softskills">Organisé</p>
-          <p id="text-softskills">Rigoureux</p>
-          <p id="text-softskills">Adaptable</p>
-          <p id="text-softskills">Autonome</p>
-          <p id="text-softskills">Travail en équipe</p>
-        </div>
-      </div>
-
-
-     
-    </section>
-    <section id="portfolio"></section>
-    <section id="contact"></section>
-  </main>
-  <script src="./index.js"></script>
-</body>
+       
+      </section>
+      <section id="portfolio"></section>
+      <section id="contact"></section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
 </html>
