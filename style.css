@@ -723,6 +723,33 @@ h4 {
   #skills-softskills {
     width: 100%;
   }
+  h4 {
+    font-size: 16px;
+  }
+  #titre-outils {
+    font-size: 18px;
+  }
+  #span-outils {
+    font-size: 14px;
+  }
+  #texte-softskills1 {
+    font-size: 14px;
+  }
+  #texte-softskills2 {
+    font-size: 14px;
+  }
+  #texte-softskills3 {
+    font-size: 14px;
+  }
+  #texte-softskills4 {
+    font-size: 14px;
+  }
+  #texte-softskills5 {
+    font-size: 14px;
+  }
+  #texte-softskills6 {
+    font-size: 14px;
+  }
 }
 @media (min-width: 375px) and (max-width: 424px) {
   #skills-description {
@@ -740,6 +767,33 @@ h4 {
   #titre-softskills {
     grid-column: 1 / 3;
   }
+  h4 {
+    font-size: 16px;
+  }
+  #titre-outils {
+    font-size: 18px;
+  }
+  #span-outils {
+    font-size: 14px;
+  }
+  #texte-softskills1 {
+    font-size: 14px;
+  }
+  #texte-softskills2 {
+    font-size: 14px;
+  }
+  #texte-softskills3 {
+    font-size: 14px;
+  }
+  #texte-softskills4 {
+    font-size: 14px;
+  }
+  #texte-softskills5 {
+    font-size: 14px;
+  }
+  #texte-softskills6 {
+    font-size: 14px;
+  }
 }
 @media (min-width: 320px) and (max-width: 374px) {
   #skills-description {
@@ -756,6 +810,15 @@ h4 {
   }
   #titre-softskills {
     grid-column: 1 / 3;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  #titre-outils {
+    font-size: 18px;
+  }
+  #span-outils {
+    font-size: 14px;
   }
   #texte-softskills1 {
     font-size: 14px;
@@ -844,9 +907,9 @@ h4 {
 #projet1-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 40%;
   z-index: 1000;
 }
 
@@ -873,21 +936,12 @@ h4 {
   border-radius: 10px;
 }
 
-#github-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-#website-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-
 #projet2-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 40%;
   z-index: 1000;
 }
 /* Projet 3 */
@@ -913,21 +967,12 @@ h4 {
   border-radius: 10px;
 }
 
-#github-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-#website-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-
 #projet3-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 40%;
   z-index: 1000;
 }
 
@@ -954,21 +999,12 @@ h4 {
   border-radius: 10px;
 }
 
-#github-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-#website-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-
 #projet4-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 40%;
   z-index: 1000;
 }
 
@@ -995,21 +1031,12 @@ h4 {
   border-radius: 10px;
 }
 
-#github-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-#website-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-
 #projet5-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 40%;
   z-index: 1000;
 }
 /* Projet 6 */
@@ -1035,21 +1062,12 @@ h4 {
   border-radius: 10px;
 }
 
-#github-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-#website-portfolio {
-  height: 4vh;
-  width: 100%;
-}
-
 #projet6-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 40%;
   z-index: 1000;
 }
 
@@ -1501,25 +1519,32 @@ footer {
     height: 60vh;
     padding-top: 3vh;
   }
+  ::placeholder {
+    font-size: 16px;
+  }
   #name {
     grid-column: 1;
     grid-row: 1;
+    font-size: 16px;
   }
   #email {
     grid-column: 1;
     grid-row: 2;
     margin-right: 0;
     margin-left: 5%;
+    font-size: 16px;
   }
   #objet {
     grid-column: 1;
     grid-row: 3;
+    font-size: 16px;
   }
   #textemessage {
     grid-column: 1;
     grid-row: 4;
     margin-right: 0;
     margin-left: 5%;
+    font-size: 16px;
   }
   #submit {
     grid-column: 1;
@@ -1571,16 +1596,19 @@ footer {
   #name {
     grid-column: 1;
     grid-row: 1;
+    font-size: 16px;
   }
   #email {
     grid-column: 1;
     grid-row: 2;
     margin-right: 0;
     margin-left: 5%;
+    font-size: 16px;
   }
   #objet {
     grid-column: 1;
     grid-row: 3;
+    font-size: 16px;
   }
   #textemessage {
     grid-column: 1;
@@ -1639,16 +1667,19 @@ footer {
   #name {
     grid-column: 1;
     grid-row: 1;
+    font-size: 16px;
   }
   #email {
     grid-column: 1;
     grid-row: 2;
     margin-right: 0;
     margin-left: 5%;
+    font-size: 16px;
   }
   #objet {
     grid-column: 1;
     grid-row: 3;
+    font-size: 16px;
   }
   #textemessage {
     grid-column: 1;

@@ -2,19 +2,14 @@
 
 ## A faire
 
-- icone github et web dans le portfolio 
+- icone github et web dans le portfolio // ok
 - changer la musique
 
-Mobile : 
-- font-size texte compétences 
-- margin-right FLORIAN LUCAS
-- font-size input dans le form
+Mobile :
 
-Tablette :
-- taille icone github et linkedin dans contact
+- font-size texte compétences // ok
+- font-size input dans le form // ok
 
-Grand-écran : 
-- mettre des marges pour centrer le contenu 
+Grand-écran :
 
-
-
+- mettre des marges pour centrer le contenu
