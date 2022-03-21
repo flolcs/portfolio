@@ -1429,3 +1429,205 @@ footer {
   font-family: "font-1";
   font-size: 16px;
 }
+
+/* Responsive Contact */
+
+@media (min-width: 425px) and (max-width: 767px) {
+  #contact-description {
+    height: 60vh;
+    width: 75%;
+    margin-left: 20%;
+    margin-top: 5vh;
+  }
+  #form-description {
+    grid-template-columns: 95%;
+    grid-template-rows: 10% 10% 10% 40% 10% 20%;
+    grid-row-gap: 0%;
+    height: 60vh;
+    padding-top: 3vh;
+  }
+  #name {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #email {
+    grid-column: 1;
+    grid-row: 2;
+    margin-right: 0;
+    margin-left: 5%;
+  }
+  #objet {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #textemessage {
+    grid-column: 1;
+    grid-row: 4;
+    margin-right: 0;
+    margin-left: 5%;
+  }
+  #submit {
+    grid-column: 1;
+    grid-row: 5;
+    margin-left: 25%;
+  }
+  #link-contact {
+    grid-column: 1;
+    grid-row: 6;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #github-contact {
+    height: 7vh;
+    width: auto;
+  }
+
+  #linkedin-contact {
+    height: 7vh;
+    width: auto;
+  }
+  #downloadcredits {
+    font-size: 12px;
+  }
+  #span-footer {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+  #contact-description {
+    height: 60vh;
+    width: 75%;
+    margin-left: 20%;
+    margin-top: 5vh;
+  }
+  #form-description {
+    grid-template-columns: 95%;
+    grid-template-rows: 10% 10% 10% 40% 10% 20%;
+    grid-row-gap: 0%;
+    height: 60vh;
+    padding-top: 3vh;
+  }
+  ::placeholder {
+    color: var(--color5);
+    font-size: 16px;
+  }
+  #name {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #email {
+    grid-column: 1;
+    grid-row: 2;
+    margin-right: 0;
+    margin-left: 5%;
+  }
+  #objet {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #textemessage {
+    grid-column: 1;
+    grid-row: 4;
+    margin-right: 0;
+    margin-left: 5%;
+    font-size: 16px;
+  }
+  #submit {
+    grid-column: 1;
+    grid-row: 5;
+    margin-left: 25%;
+    font-size: 20px;
+  }
+  #link-contact {
+    grid-column: 1;
+    grid-row: 6;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #github-contact {
+    height: 7vh;
+    width: auto;
+  }
+
+  #linkedin-contact {
+    height: 7vh;
+    width: auto;
+  }
+  #downloadcredits {
+    font-size: 12px;
+  }
+  #span-footer {
+    font-size: 12px;
+  }
+}
+@media (min-width: 320px) and (max-width: 374px) {
+  #contact-description {
+    height: 60vh;
+    width: 75%;
+    margin-left: 20%;
+    margin-top: 5vh;
+  }
+  #form-description {
+    grid-template-columns: 95%;
+    grid-template-rows: 10% 10% 10% 40% 10% 20%;
+    grid-row-gap: 0%;
+    height: 60vh;
+    padding-top: 3vh;
+  }
+  ::placeholder {
+    color: var(--color5);
+    font-size: 16px;
+  }
+  #name {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #email {
+    grid-column: 1;
+    grid-row: 2;
+    margin-right: 0;
+    margin-left: 5%;
+  }
+  #objet {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  #textemessage {
+    grid-column: 1;
+    grid-row: 4;
+    margin-right: 0;
+    margin-left: 5%;
+    font-size: 16px;
+  }
+  #submit {
+    grid-column: 1;
+    grid-row: 5;
+    margin-left: 25%;
+    font-size: 20px;
+  }
+  #link-contact {
+    grid-column: 1;
+    grid-row: 6;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #github-contact {
+    height: 7vh;
+    width: auto;
+  }
+
+  #linkedin-contact {
+    height: 7vh;
+    width: auto;
+  }
+  #downloadcredits {
+    font-size: 10px;
+  }
+  #span-footer {
+    font-size: 10px;
+  }
+}
