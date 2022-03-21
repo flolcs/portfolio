@@ -4,11 +4,7 @@
 
 - icone github et web dans le portfolio // ok
 - changer la musique
-
-Mobile :
-
-- font-size texte compétences // ok
-- font-size input dans le form // ok
+- icone visual studio code
 
 Grand-écran :
 
