@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Florian Lucas</title>
-  <link rel="shortcut icon" href="./assets/wave.png" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="shortcut icon" href="./assets/logo.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+  <link rel="stylesheet" href="./css/style.css"/>
 </head>
 
 <body>
-  <div class="mousemove"></div>
   <header>
     <div>
       <input type="image" src="./assets/music-note.png" id="music-note" />
@@ -38,12 +38,11 @@
     </nav>
     <section id="homepage">
       <h1>Florian LUCAS</h1>
-      <h2>Développeur web front-end</h2>
+      <h2></h2>
       <a id="downloadcv" href="./downloads/cvlucasflorian.pdf" download="cvlucasflorian">Télécharger mon CV</a>
       <img id="wave-home" src="./assets/wave.png" alt="wave" />
     </section>
   </header>
-
   <main>
     <section id="aboutme">
       <img id="wave-aboutme" src="./assets/wave-aboutme.png" alt="wave" />
@@ -92,12 +91,12 @@
             <span id="span-outils">Figma</span>
           </div>
           <div id="outils3">
-            <img id="img-outils" src="./assets/bootstrap.png" alt="bootstrap" />
+            <i id="img-outils" class="bi bi-bootstrap-fill" alt="bootstrap"></i>
             <span id="span-outils">Bootstrap</span>
           </div>
           <div id="outils4">
-            <img id="img-outils" src="./assets/photoshop.png" alt="photoshop" />
-            <span id="span-outils">Photoshop</span>
+            <img id="img-outils" src="./assets/vscode.png" alt="vscode" />
+            <span id="span-outils">VS Code</span>
           </div>
           <div id="outils5">
             <img id="img-outils" src="" alt="" />
@@ -124,70 +123,52 @@
             <span id="span-outils"></span>
           </div>
         </div>
-        <div id="skills-softskills">
-          <span id="titre-softskills">Soft Skills</span>
-            <span id="texte-softskills1">Curieux</span>
-            <span id="texte-softskills2">Autonome</span>
-            <span id="texte-softskills3">Organisé</span>
-            <span id="texte-softskills4">Rigoureux</span>
-            <span id="texte-softskills5">Adaptable</span>
-            <span id="texte-softskills6">Travail en équipe</span>
-        </div>
       </div>
     </section>
     <section id="portfolio">
       <h3 id="titre-portfolio">Portfolio</h3>
       <img id="wave-portfolio" src="./assets/wave-portfolio.png" alt="wave" />
-      <div id="portfolio-description">
-        <div id="projet1">
-          <span id="titre-projet1">Coffee</span>
-          <img id="image-projet1" src="./assets/coffee.png" alt="coffee" />
-          <div id="projet1-link">
-            <a href="https://github.com/flolcs/coffee"><img id="github-portfolio" src="./assets/github-portfolio.png"
-                alt="github" /></a>
-            <a href=""><img id="website-portfolio" src="./assets/web-portfolio.png" alt="website" /></a>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <span id="titre-projet">Elecar</span>
+            <img id="image-projet" src="./assets/elecar.png" alt="elecar" />
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/elecar"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
           </div>
-        </div>
-        <div id="projet2">
-          <span id="titre-projet2">Architects</span>
-          <img id="image-projet2" src="./assets/architects.png" alt="architects" />
-          <div id="projet2-link">
-            <a href="https://github.com/flolcs/architects"><img id="github-portfolio"
-                src="./assets/github-portfolio.png" alt="github" /></a>
-            <a href=""><img id="website-portfolio" src="./assets/web-portfolio.png" alt="website" /></a>
+          <div class="swiper-slide" id="projet-container">
+            <span id="titre-projet">Dashboard</span>
+            <img id="image-projet" src="./assets/dashboard.png" alt="dashboard" />
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/dashboard"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
           </div>
-        </div>
-        <div id="projet3">
-          <span id="titre-projet3">GPT-3</span>
-          <img id="image-projet3" src="./assets/gtp3.png" alt="gpt-3" />
-          <div id="projet3-link">
-            <a href="https://github.com/flolcs/gpt3"><img id="github-portfolio" src="./assets/github-portfolio.png"
-                alt="github" /></a>
-            <a href=""><img id="website-portfolio" src="./assets/web-portfolio.png" alt="website" /></a>
+          <div class="swiper-slide" id="projet-container">
+            <span id="titre-projet">GPT-3</span>
+            <img id="image-projet" src="./assets/gtp3.png" alt="gpt3" />
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/gpt3"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
           </div>
-        </div>
-        <div id="projet4">
-          <span id="titre-projet4">A venir</span>
-          <img id="image-projet4" src="./assets/avenir.png" alt="" />
-          <div id="projet4-link">
-            <a href=""><img id="github-portfolio" src="./assets/github-portfolio.png" alt="github" /></a>
-            <a href=""><img id="website-portfolio" src="./assets/web-portfolio.png" alt="website" /></a>
+          <div class="swiper-slide" id="projet-container">
+            <span id="titre-projet">Coffee</span>
+            <img id="image-projet" src="./assets/coffee.png" alt="coffee" />
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/coffee"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
           </div>
-        </div>
-        <div id="projet5">
-          <span id="titre-projet5">A venir</span>
-          <img id="image-projet5" src="./assets/avenir.png" alt="" />
-          <div id="projet5-link">
-            <a href=""><img id="github-portfolio" src="./assets/github-portfolio.png" alt="github" /></a>
-            <a href=""><img id="website-portfolio" src="./assets/web-portfolio.png" alt="website" /></a>
-          </div>
-        </div>
-        <div id="projet6">
-          <span id="titre-projet6">A venir</span>
-          <img id="image-projet6" src="./assets/avenir.png" alt="" />
-          <div id="projet6-link">
-            <a href=""><img id="github-portfolio" src="./assets/github-portfolio.png" alt="github" /></a>
-            <a href=""><img id="website-portfolio" src="./assets/web-portfolio.png" alt="website" /></a>
+          <div class="swiper-slide" id="projet-container">
+            <span id="titre-projet">Architects</span>
+            <img id="image-projet" src="./assets/architects.png" alt="architects"/>
+            <div id="projet-link">
+              <a href="https://github.com/flolcs/architects"><i id="github-portfolio" class="bi bi-github"></i></a>
+              <a href=""><i id="website-portfolio" class="bi bi-code-slash"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -202,10 +183,6 @@
             <input id="email" type="email" placeholder="Email" />
             <input id="objet" type="text" placeholder="Objet" />
             <textarea name="textemessage" id="textemessage" placeholder="Ecrivez votre message"></textarea>
-            <div id="link-contact">
-              <a href="https://github.com/flolcs"><img id="github-contact" src="./assets/github.png" alt="github" /></a>
-              <a href="https://www.linkedin.com/in/florian-lucas-b66718212/"><img id="linkedin-contact" src="./assets/linkedin.png" alt="linkedin" /></a>
-            </div>
             <input type="submit" id="submit" value="Envoyer" />
           </div>
         </form>
@@ -218,6 +195,8 @@
       <span id="span-footer">Florian Lucas © 2022. Tous droits réservés.</span>
     </div>
   </footer>
-  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="./js/index.js"></script>
 </body>
 </html>
