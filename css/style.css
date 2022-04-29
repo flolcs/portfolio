@@ -136,7 +136,7 @@ h1 {
 
 h2 {
   font-family: "font-4";
-  font-size: 48px;
+  font-size: 60px !important;
   letter-spacing: 10px;
   align-items: center;
   background: linear-gradient(90deg, #207c78 0%, #f4c095 75%);
@@ -144,7 +144,7 @@ h2 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: absolute;
-  top: 35vh;
+  top: 30vh;
   left: 25%;
 }
 
