@@ -5,7 +5,7 @@ const mySong = document.querySelector("#mySong");
 music.addEventListener("click", () => {
   if (mySong.paused) {
     mySong.play();
-    music.style.border = "2px solid #ffffff";
+    music.style.border = "2px solid #f4c095";
     music.style.borderRadius = "50px";
   } else {
     mySong.pause();
@@ -39,6 +39,30 @@ window.onscroll = () => {
     }
   });
 };
+
+// Sous Menu
+const sousMenu = document.querySelector("#sous-menu");
+const btnMenu = document.querySelector(".ri-menu-line");
+const btnClose = document.querySelector(".ri-close-line");
+const balise = document.querySelectorAll(".balise");
+
+btnMenu.addEventListener("click", () => {
+  btnMenu.style.display = "none";
+  btnClose.style.display = "block";
+  sousMenu.style.display = "flex";
+});
+
+btnClose.addEventListener("click", () => {
+  btnClose.style.display = "none";
+  btnMenu.style.display = "block";
+  sousMenu.style.display = "none";
+});
+
+balise.addEventListener("click", () => {
+  btnClose.style.display = "none";
+  btnMenu.style.display = "block";
+  sousMenu.style.display = "none";
+});
 
 // HTML
 const slideHtml = document.querySelector("#sous-container1");

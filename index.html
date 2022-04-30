@@ -8,9 +8,9 @@
   <title>Florian Lucas</title>
   <link rel="shortcut icon" href="./assets/logo.png" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css"/>
 </head>
-
 <body>
   <header>
     <div>
@@ -18,21 +18,40 @@
       <audio id="mySong" src="./assets/music.mp3"></audio>
     </div>
     <nav>
-      <ul>
+      <i class="ri-menu-line"></i>
+      <i class="ri-close-line"></i>
+      <ul id="menu">
         <li class="homepage active">
-          <a href="#homepage"><img src="./assets/home.png" alt="home" /></a>
+          <a href="#homepage"><img src="./assets/home.png" id="img-menu" alt="home" /></a>
         </li>
         <li class="aboutme">
-          <a href="#aboutme"><img src="./assets/aboutme.png" alt="about me" /></a>
+          <a href="#aboutme"><img src="./assets/aboutme.png" id="img-menu" alt="about me" /></a>
         </li>
         <li class="skills">
-          <a href="#skills"><img src="./assets/skills.png" alt="skills" /></a>
+          <a href="#skills"><img src="./assets/skills.png" id="img-menu" alt="skills" /></a>
         </li>
         <li class="portfolio">
-          <a href="#portfolio"><img src="./assets/portfolio.png" alt="portfolio" /></a>
+          <a href="#portfolio"><img src="./assets/portfolio.png" id="img-menu" alt="portfolio" /></a>
         </li>
         <li class="contact">
-          <a href="#contact"><img src="./assets/contact.png" alt="contact" /></a>
+          <a href="#contact"><img src="./assets/contact.png" id="img-menu" alt="contact" /></a>
+        </li>
+      </ul>
+      <ul id="sous-menu">
+        <li class="balise homepage active">
+          <a href="#homepage">Home</a>
+        </li>
+        <li class="balise aboutme">
+          <a href="#aboutme">About</a>
+        </li>
+        <li class="balise skills">
+          <a href="#skills">Skills</a>
+        </li>
+        <li class="balise portfolio">
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li class="balise contact">
+          <a href="#contact">Contact</a>
         </li>
       </ul>
     </nav>
