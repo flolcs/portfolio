@@ -5,11 +5,8 @@ const mySong = document.querySelector("#mySong");
 music.addEventListener("click", () => {
   if (mySong.paused) {
     mySong.play();
-    music.style.border = "2px solid #f4c095";
-    music.style.borderRadius = "50px";
   } else {
     mySong.pause();
-    music.style.border = "none";
   }
 });
 
