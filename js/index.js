@@ -5,8 +5,10 @@ const mySong = document.querySelector("#mySong");
 music.addEventListener("click", () => {
   if (mySong.paused) {
     mySong.play();
+    music.classList.add("musicActive");
   } else {
     mySong.pause();
+    music.classList.remove("musicActive");
   }
 });
 

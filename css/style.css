@@ -41,43 +41,72 @@ header {
   height: 100vh;
   width: 100%;
   background-color: var(--color1);
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+  -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
 }
 
 /* Music */
-
-#music-note {
+.ri-disc-fill {
   font-size: 40px;
   z-index: 1000;
   cursor: pointer;
   position: absolute;
-  border: none;
+  border: solid 2px var(--color4);
+  border-radius: 50px;
   right: 30px;
   top: 30px;
-  animation: animMusic 2s ease;
+  animation: animMusic 2s ease infinite;
 }
 
 @keyframes animMusic {
   0% {
-    box-shadow: 0px 0px 0px 0px var(--color4);
   }
   50% {
-    box-shadow: 0px 0px 5px 5px var(--color4);
+    box-shadow: 0px 0px 3px 3px var(--color4);
   }
 }
 
-#music-note:hover {
+.ri-disc-fill:hover {
   transform: scale(110%);
   transition: .5s;
+}
+
+.musicActive {
+  border: solid 2px var(--color2);
+  border-radius: 50px;
+  animation: animMusicActive 1.5s ease infinite;
+}
+
+@keyframes animMusicActive {
+  0% {
+  }
+  50% {
+    box-shadow: 0px 0px 6px 6px var(--color2);
+  }
 }
 
 /* Nav */
 .ri-menu-line {
   display: none;
   cursor: pointer;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  font-size: 35px;
+  color: var(--color4);
+  z-index: 1000;
 }
 .ri-close-line {
   display: none;
   cursor: pointer;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  font-size: 35px;
+  color: var(--color4);
+  z-index: 1000;
 }
 
 #sous-menu {
@@ -88,6 +117,10 @@ nav {
   position: relative;
   position: fixed;
   z-index: 1000;
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+  -ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+  user-select: none; /* Propriété standard */
 }
 
 #menu {
@@ -96,8 +129,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   position: absolute;
-  height: 450px;
-  width: 100px;
+  height: 350px;
+  width: 80px;
   z-index: 1000;
   position: fixed;
   top: 50%;
@@ -108,8 +141,8 @@ nav {
 }
 
 #img-menu {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   opacity: 0.5;
 }
@@ -133,7 +166,7 @@ li.active #img-menu {
 h1 {
   color: var(--color4);
   font-family: "font-3";
-  font-size: 64px;
+  font-size: 50px;
   align-items: center;
   position: absolute;
   top: 20vh;
@@ -177,13 +210,30 @@ h2 {
   justify-content: center;
   z-index: 2;
 }
+
 #downloadcv:hover {
   background-color: var(--color3);
-  transition: 0.5s;
+  transition: 1s;
 }
-#downloadcv:active {
-  background-color: var(--color3);
-  filter: drop-shadow(0px 5px 5px rgb(255, 255, 255, 0.5));
+
+#downloadcv:hover::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 70%;
+  background-color: var(--color1);
+  opacity: 0.5;
+  top: 110%;
+  animation: animDownload 0.5s ease forwards;
+}
+
+@keyframes animDownload {
+  from {
+    top: 110%;
+  }
+  to {
+    top: 75%;
+  }
 }
 
 #wave-home {
@@ -197,10 +247,10 @@ h2 {
 /* Responsive Header - Homepage */
 @media (min-width: 1024px) and (max-width: 1440px) {
   h1 {
-    font-size: 40px;
+    font-size: 38px;
   }
   h2 {
-    font-size: 44px !important;
+    font-size: 40px !important;
   }
   #downloadcv {
     width: 200px;
@@ -210,32 +260,23 @@ h2 {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
   h2 {
-    font-size: 38px !important;
+    font-size: 34px !important;
   }
   #downloadcv {
     width: 160px;
     height: 50px;
     font-size: 14px;
   }
-  nav {
-    height: 400px;
-    width: 75px;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 3%;
-  }
-
   #menu {
-    height: 400px;
-    width: 75px;
-  }
-
-  #img-menu {
+    height: 290px;
     width: 60px;
-    height: 60px;
+  }
+  #img-menu {
+    width: 50px;
+    height: 50px;
   }
 }
 @media (min-width: 1px) and (max-width: 767px) {
@@ -247,21 +288,6 @@ h2 {
   }
   .ri-menu-line {
     display: block;
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    font-size: 40px;
-    color: var(--color4);
-    z-index: 1000;
-  }
-  .ri-close-line {
-    display: none;
-    position: fixed;
-    top: 30px;
-    left: 30px;
-    font-size: 40px;
-    color: var(--color4);
-    z-index: 1000;
   }
   #sous-menu {
     position: fixed;
@@ -282,55 +308,65 @@ h2 {
   @keyframes animSousMenu {
     from {
       width: 0;
+      opacity: 0;
     }
     to {
       width: 70vw;
+      opacity: 1;
     }
   }
   a {
     text-decoration: none;
     font-family: "font-4";
-    font-size: 36px;
+    font-size: 28px;
     color: var(--color5);
+  }
+  .ri-disc-fill {
+    font-size: 35px;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
   h1 {
-    font-size: 28px;
-    left: 20vw;
+    font-size: 24px;
+    left: 15vw;
   }
   h2 {
-    font-size: 26px !important;
-    left: 20vw;
+    font-size: 28px !important;
+    left: 15vw;
   }
   #downloadcv {
     width: 130px;
     height: 40px;
     font-size: 12px;
+    right: 20%;
   }
 }
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 1px) and (max-width: 424px) {
   h1 {
     font-size: 22px;
-    left: 20vw;
+    left: 15vw;
   }
   h2 {
     font-size: 24px !important;
-    left: 20vw;
+    left: 15vw;
   }
   #downloadcv {
     width: 130px;
     height: 40px;
     font-size: 12px;
+    right: 15%;
+  }
+  .ri-disc-fill {
+    top: 15px;
+    right: 15px;
   }
   .ri-menu-line {
-    font-size: 30px;
+    top: 15px;
+    left: 15px;
   }
   .ri-close-line {
-    font-size: 30px;
-  }
-  #music-note {
-    font-size: 30px;
+    top: 15px;
+    left: 15px;
   }
 }
 
@@ -361,95 +397,61 @@ h3 {
 
 .aboutme-description {
   padding-top: 25vh;
-  height: 75vh;
+  padding-bottom: 25vh;
+  height: 100%;
   padding-left: 15%;
   padding-right: 5%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
 }
 
-#text-aboutme {
+.text-aboutme {
   font-family: "font-1";
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 26px;
   color: var(--color5);
 }
 
-#text-aboutme::before {
+.text-aboutme::before {
   content: "";
   display: block;
   background: linear-gradient(90deg, #ffffff -15%, #f4c095 100%), #ffffff;
-  width: 60px;
+  width: 45px;
   height: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 /* Responsive About me */
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  #text-aboutme {
-    font-size: 26px;
-  }
-}
 @media (min-width: 768px) and (max-width: 1023px) {
-  h3 {
-    font-size: 36px;
-  }
-  #text-aboutme {
-    font-size: 20px;
-    margin-left: 5%;
-  }
-  #text-aboutme::before {
-    width: 60px;
-    height: 4px;
-    margin-bottom: 8px;
+  .text-aboutme {
+    font-size: 22px;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
+  .text-aboutme {
+    font-size: 18px;
+  }
+  .aboutme-description {
+    padding-left: 5%;
+    padding-top: 30vh;
+  }
   h3 {
-    font-size: 32px;
-  }
-  #text-aboutme {
-    font-size: 16px;
-    margin-left: 8%;
-  }
-  #text-aboutme::before {
-    width: 50px;
-    height: 4px;
-    margin-bottom: 6px;
+    font-size: 36px;
   }
 }
-
-@media (min-width: 375px) and (max-width: 424px) {
-  h3 {
-    font-size: 32px;
-    left: 50%;
-  }
-  #text-aboutme {
-    font-size: 16px;
-    margin-left: 8%;
-  }
-
-  #text-aboutme::before {
-    width: 40px;
-    height: 4px;
-    margin-bottom: 4px;
-  }
-}
-@media (min-width: 320px) and (max-width: 374px) {
-  h3 {
-    font-size: 32px;
-    left: 50%;
-  }
-  #text-aboutme {
+@media (min-width: 1px) and (max-width: 424px) {
+  .text-aboutme {
     font-size: 14px;
-    margin-left: 8%;
   }
-  #text-aboutme::before {
-    width: 35px;
-    height: 4px;
-    margin-bottom: 2px;
+  .aboutme-description {
+    padding-left: 5%;
+    padding-top: 35vh;
+  }
+  h3 {
+    font-size: 30px;
+    left: 50%;
   }
 }
 
@@ -754,6 +756,7 @@ h4 {
   height: 60vh;
   margin-left: 15%;
   margin-right: 15%;
+  display: none;
 }
 
 .swiper-wrapper {
