@@ -38,19 +38,19 @@
         </li>
       </ul>
       <ul id="sous-menu">
-        <li class="homepage active">
+        <li class="homepage active liSousMenu">
           <a href="#homepage">Home</a>
         </li>
-        <li class="aboutme">
+        <li class="aboutme liSousMenu">
           <a href="#aboutme">About</a>
         </li>
-        <li class="skills">
+        <li class="skills liSousMenu">
           <a href="#skills">Skills</a>
         </li>
-        <li class="portfolio">
+        <li class="portfolio liSousMenu">
           <a href="#portfolio">Portfolio</a>
         </li>
-        <li class="contact">
+        <li class="contact liSousMenu">
           <a href="#contact">Contact</a>
         </li>
       </ul>
@@ -65,7 +65,7 @@
   <main>
     <section id="aboutme">
       <img id="wave-aboutme" src="./assets/wave-aboutme.png" alt="wave" />
-      <h3>A propos</h3>
+      <h3 class="titre_aboutme">A propos</h3>
       <div class="aboutme-description">
         <p class="text-aboutme">Passioné d'informatique</p>
         <p class="text-aboutme">
@@ -76,70 +76,50 @@
       </div>
     </section>
     <section id="skills">
-      <h3 id="titre-competences">Compétences</h3>
+      <h3 class="titre_competences">Compétences</h3>
       <img id="wave-skills" src="./assets/wave-skills.png" alt="wave" />
-      <div id="skills-description">
-        <div id="skills-dev">
+      <div class="skills-description">
+        <div class="skills-dev">
           <div id="skills-html">
             <h4>HTML</h4>
-            <div id="container1">
-              <div id="sous-container1"></div>
+            <div class="containerSkills">
+              <div  class="sousContainerSkills" id="sous-container1"></div>
             </div>
           </div>
           <div id="skills-css">
             <h4>CSS</h4>
-            <div id="container2">
-              <div id="sous-container2"></div>
+            <div class="containerSkills">
+              <div  class="sousContainerSkills" id="sous-container2"></div>
             </div>
           </div>
           <div id="skills-js">
             <h4>Javascript</h4>
-            <div id="container3">
-              <div id="sous-container3"></div>
+            <div class="containerSkills">
+              <div  class="sousContainerSkills" id="sous-container3"></div>
             </div>
           </div>
         </div>
-        <div id="skills-outils">
-          <span id="titre-outils">Outils</span>
-          <div id="outils1">
-            <img id="img-outils" src="./assets/github-skills.png" alt="github" />
-            <span id="span-outils">Github</span>
+        <div class="skills-outils">
+          <div class="skills-outils-container frontend">
+            <span class="titre_skills">Frontend</span>
+            <i class="iconSkills bi bi-filetype-html"></i>
+            <i class="iconSkills bi bi-filetype-css"></i>
+            <i class="iconSkills bi bi-filetype-js"></i>
+            <i class="iconSkills ri-reactjs-fill"></i>
           </div>
-          <div id="outils2">
-            <img id="img-outils" src="./assets/figma.png" alt="figma" />
-            <span id="span-outils">Figma</span>
+          <div class="skills-outils-container tools">
+            <span class="titre_skills">Tools</span>
+            <i class="iconSkills bi bi-git"></i>
+            <i class="iconSkills bi bi-github"></i>
+            <i class="iconSkills bi bi-terminal-fill"></i>
+            <img class="iconSkills" src="./assets/vscode.png" alt="vscode" />
           </div>
-          <div id="outils3">
-            <i id="img-outils" class="bi bi-bootstrap-fill" alt="bootstrap"></i>
-            <span id="span-outils">Bootstrap</span>
-          </div>
-          <div id="outils4">
-            <img id="img-outils" src="./assets/vscode.png" alt="vscode" />
-            <span id="span-outils">VS Code</span>
-          </div>
-          <div id="outils5">
-            <img id="img-outils" src="" alt="" />
-            <span id="span-outils"></span>
-          </div>
-          <div id="outils6">
-            <img id="img-outils" src="" alt="" />
-            <span id="span-outils"></span>
-          </div>
-          <div id="outils7">
-            <img id="img-outils" src="" alt="" />
-            <span id="span-outils"></span>
-          </div>
-          <div id="outils8">
-            <img id="img-outils" src="" alt="" />
-            <span id="span-outils"></span>
-          </div>
-          <div id="outils9">
-            <img id="img-outils" src="" alt="" />
-            <span id="span-outils"></span>
-          </div>
-          <div id="outils10">
-            <img id="img-outils" src="" alt="" />
-            <span id="span-outils"></span>
+          <div class="skills-outils-container others">
+            <span class="titre_skills">Others</span>
+            <i class="iconSkills bi bi-bootstrap-fill"></i>
+            <i class="iconSkills ri-npmjs-fill"></i>
+            <img class="iconSkills" src="./assets/figma.png" alt="figma" />
+            <img class="iconSkills" src="./assets/photopea.png" alt="photopea" />
           </div>
         </div>
       </div>

@@ -36,6 +36,11 @@ window.onscroll = () => {
     if (li.className === current) {
       li.classList.add("active");
     }
+    if (document.documentElement.clientWidth < 768) {
+      btnClose.style.display = "none";
+      sousMenu.style.display = "none";
+      btnMenu.style.display = "block";
+    }
   });
 };
 
@@ -43,7 +48,7 @@ window.onscroll = () => {
 const sousMenu = document.querySelector("#sous-menu");
 const btnMenu = document.querySelector(".ri-menu-line");
 const btnClose = document.querySelector(".ri-close-line");
-const balise = document.querySelectorAll(".balise");
+const liSousMenu = document.querySelectorAll(".liSousMenu");
 
 btnMenu.addEventListener("click", () => {
   btnMenu.style.display = "none";
@@ -53,14 +58,8 @@ btnMenu.addEventListener("click", () => {
 
 btnClose.addEventListener("click", () => {
   btnClose.style.display = "none";
-  btnMenu.style.display = "block";
   sousMenu.style.display = "none";
-});
-
-balise.addEventListener("click", () => {
-  btnClose.style.display = "none";
   btnMenu.style.display = "block";
-  sousMenu.style.display = "none";
 });
 
 // HTML
@@ -110,5 +109,5 @@ const sr = ScrollReveal({
 
 sr.reveal("#downloadcv", { delay: 500, origin: "bottom" });
 sr.reveal(".aboutme-description", { origin: "left" });
-sr.reveal("#skills-outils", { origin: "bottom" });
+sr.reveal(".skills-outils", { origin: "bottom" });
 sr.reveal("#contact-description", { origin: "top" });
