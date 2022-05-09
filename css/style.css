@@ -32,6 +32,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 *::selection {
   background-color: var(--color4);
 }
@@ -238,10 +242,10 @@ h2 {
 
 #wave-home {
   position: absolute;
-  bottom: 0%;
-  right: 0%;
-  width: 90%;
-  height: 50%;
+  top: 60vh;
+  right: 0;
+  width: 100%;
+  height: 40%;
 }
 
 /* Responsive Header - Homepage */
@@ -564,8 +568,15 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100%;
+  width: 20%;
+  border-radius: 15px;
+  background-color: rgba(230, 230, 230, 0.10);
+}
+
+.skills-outils-container:hover {
+  background-color: rgba(230, 230, 230, 0.20);
 }
 
 /* Responsive Skills */
@@ -601,7 +612,7 @@ h4 {
   width: 100%;
 }
 
-#titre-portfolio {
+.titre-portfolio {
   position: absolute;
   top: 305vh;
   left: 50%;
@@ -609,75 +620,127 @@ h4 {
 }
 
 .swiper {
-  padding-top: 35vh;
-  width: 70%;
-  height: 60vh;
   margin-left: 15%;
   margin-right: 15%;
-  display: none;
-}
-
-.swiper-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
   height: 100%;
-  width: 100%;
+  width: 70%;
+  position: relative;
 }
 
 .swiper-slide {
-  background-color: var(--color3);
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 30%;
+  height: calc((100% - 30px) / 2) !important;
+  position: relative;
+}
+
+.img_portfolio {
+  width: 100%;
   height: 100%;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-#titre-projet {
-  font-size: 22px;
-  font-family: "font-2";
-}
-
-#image-projet {
-  width: 85%;
   border-radius: 10px;
 }
 
-#github-portfolio {
-  font-size: 30px;
-}
-#website-portfolio {
-  font-size: 30px;
+.titre_projets {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  font-family: "font-4";
+  visibility: hidden;
 }
 
-#projet-link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  width: 50%;
+.swiper-slide:hover::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  background-color: var(--color1);
+  border-radius: 10px;
+  bottom: 0;
+  animation: animProjet 0.5s ease forwards;
+}
+
+@keyframes animProjet {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.swiper-slide:hover .titre_projets {
+  visibility: visible;
+  animation: animTitreProjet 1s ease forwards;
+}
+
+@keyframes animTitreProjet {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 25%;
+  }
+}
+
+
+.link_github {
+  position: absolute;
+  top: 60%;
+  left: 0%;
+  visibility: hidden;
+}
+
+.swiper-slide:hover .link_github {
+  visibility: visible;
+  animation: animLinkGithub 1s ease forwards;
+}
+
+@keyframes animLinkGithub {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 25%;
+  }
+}
+
+.link_web {
+  position: absolute;
+  top: 60%;
+  right: 0%;
+  visibility: hidden;
+}
+
+.swiper-slide:hover .link_web {
+  visibility: visible;
+  animation: animLinkWeb 1s ease forwards;
+}
+
+@keyframes animLinkWeb {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 25%;
+  }
+}
+
+.icon_portfolio {
+  font-size: 40px;
 }
 
 /* Responsive Portfolio */
-@media (min-width: 768px) and (max-width: 1023px) {
-}
 @media (min-width: 425px) and (max-width: 767px) {
+  .swiper {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+  }
 }
 
-@media (min-width: 375px) and (max-width: 424px) {
-}
-
-@media (min-width: 320px) and (max-width: 374px) {
-}
 
 /* Contact */
 #contact {

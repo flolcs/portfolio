@@ -111,3 +111,31 @@ sr.reveal("#downloadcv", { delay: 500, origin: "bottom" });
 sr.reveal(".aboutme-description", { origin: "left" });
 sr.reveal(".skills-outils", { origin: "bottom" });
 sr.reveal("#contact-description", { origin: "top" });
+
+//Swiper
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3.3,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3.3,
+      spaceBetween: 20,
+    },
+    450: {
+      slidesPerView: 2.3,
+      spaceBetween: 20,
+    },
+    1: {
+      slidesPerView: 1.3,
+      spaceBetween: 20,
+    },
+  },
+});
