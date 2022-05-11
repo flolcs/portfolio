@@ -110,7 +110,7 @@ const sr = ScrollReveal({
 sr.reveal("#downloadcv", { delay: 500, origin: "bottom" });
 sr.reveal(".aboutme-description", { origin: "left" });
 sr.reveal(".skills-outils", { origin: "bottom" });
-sr.reveal("#contact-description", { origin: "top" });
+sr.reveal(".contact_description", { origin: "top" });
 
 //Swiper
 var swiper = new Swiper(".mySwiper", {
@@ -125,7 +125,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   breakpoints: {
-    768: {
+    1024: {
       slidesPerView: 3.3,
       spaceBetween: 20,
     },
